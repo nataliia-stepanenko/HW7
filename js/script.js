@@ -1,14 +1,10 @@
 "use strict"
 // 1
 function sumTo(n){
-    if (n==0) {
-        return 1;
+    if (n===1){
+    return n;
     } else {
-        if (n==1){
-        return n;
-        } else {
-        return n + sumTo(n-1);
-        }
+    return n + sumTo(n-1);
     }
 }
 console.log(sumTo(4)); // 10
